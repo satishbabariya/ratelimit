@@ -1,4 +1,4 @@
-module echo-rate-limit
+module ratelimit
 
 go 1.13
 
