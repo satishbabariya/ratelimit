@@ -12,7 +12,7 @@ type RateLimiter struct {
 	Rate    *redis_rate.Limit
 }
 
-func (limiter *RateLimiter) limit(next echo.HandlerFunc) echo.HandlerFunc {
+func (limiter *RateLimiter) Limit(next echo.HandlerFunc) echo.HandlerFunc {
 	return func(c echo.Context) error {
 
 		res, err := limiter.Limiter.Allow(c.RealIP(), limiter.Rate)
