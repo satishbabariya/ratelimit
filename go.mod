@@ -1,4 +1,4 @@
-module ratelimit
+module github.com/satishbabariya/ratelimit
 
 go 1.13
 
